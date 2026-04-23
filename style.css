@@ -166,3 +166,24 @@ section ul li {
 .color-scheme select {
     font: inherit;
 }
+
+/* GitHub stats */
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  text-align: center;
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-size: 80%;
+  color: oklch(50% 3% 200);
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  font-size: 150%;
+  font-weight: 500;
+  margin: 0;
+}

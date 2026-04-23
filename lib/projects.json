@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Responsible Data Management Research",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed American Community Survey data (1.6M+ observations) using Python to identify patterns across demographic and occupational variables, uncovering a 29% income disparity across occupation codes."
+  },
+  {
+    "title": "XGBoost Health Classifier",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Engineered and optimized an XGBoost classifier using hyperparameter tuning and Repeated Stratified K-Fold cross-validation, achieving 96% cross-validated accuracy on CDC NHANES dataset."
+  },
+  {
+    "title": "Lorem Ipsum Project",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Dolor Sit Amet",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Consectetur Adipiscing",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Magna Aliqua Project",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Ut Enim Minim",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Quis Nostrud Exercitation",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Ullamco Laboris",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Duis Aute Irure",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Reprehenderit Voluptate",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  },
+  {
+    "title": "Velit Esse Cillum",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos assumenda explicabo odio nobis ipsa laudantium quas eum."
+  }
+]
