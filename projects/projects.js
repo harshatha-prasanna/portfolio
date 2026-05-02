@@ -10,6 +10,14 @@ if (projectsTitle) {
 }
 
 let selectedIndex = -1;
+let query = '';
+
+function getSearchFiltered() {
+  return projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
+}
 
 function renderPieChart(projectsGiven) {
   let svg = d3.select('svg');
@@ -27,6 +35,11 @@ function renderPieChart(projectsGiven) {
   let data = rolledData.map(([year, count]) => {
     return { value: count, label: year };
   });
+
+  // reset selectedIndex if it's out of bounds after re-render
+  if (selectedIndex >= data.length) {
+    selectedIndex = -1;
+  }
 
   let colors = d3.scaleOrdinal(d3.schemeTableau10);
   let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
@@ -53,13 +66,15 @@ function renderPieChart(projectsGiven) {
             selectedIndex === idx ? 'legend-item selected' : 'legend-item',
           );
 
+        // apply both filters
+        let searchFiltered = getSearchFiltered();
         if (selectedIndex === -1) {
-          renderProjects(projects, projectsContainer, 'h2');
+          renderProjects(searchFiltered, projectsContainer, 'h2');
         } else {
-          let filtered = projects.filter(
+          let yearFiltered = searchFiltered.filter(
             (p) => p.year === data[selectedIndex].label,
           );
-          renderProjects(filtered, projectsContainer, 'h2');
+          renderProjects(yearFiltered, projectsContainer, 'h2');
         }
       });
   });
@@ -78,11 +93,9 @@ renderProjects(projects, projectsContainer, 'h2');
 
 let searchInput = document.querySelector('.searchBar');
 searchInput.addEventListener('change', (event) => {
-  let query = event.target.value;
-  let filteredProjects = projects.filter((project) => {
-    let values = Object.values(project).join('\n').toLowerCase();
-    return values.includes(query.toLowerCase());
-  });
-  renderProjects(filteredProjects, projectsContainer, 'h2');
-  renderPieChart(filteredProjects);
+  query = event.target.value;
+  selectedIndex = -1; // reset pie selection when search changes
+  let searchFiltered = getSearchFiltered();
+  renderPieChart(searchFiltered);
+  renderProjects(searchFiltered, projectsContainer, 'h2');
 });
